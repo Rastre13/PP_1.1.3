@@ -62,4 +62,12 @@ public class Util {
             System.out.println("Ошибка закрытия: " + e.getMessage());
         }
     }
+
+    public static void closeSessionFactory() {
+        try {
+            sessionFactory.close();
+        } catch (Exception e) {
+            System.out.println("Ошибка закрытия: " + e.getMessage());
+        }
+    }
 }
